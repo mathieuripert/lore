@@ -87,7 +87,7 @@ Pipelines are the unsexy, but essential component of most machine learning appli
           # dataframe() supports keyword args for interpolation (limit)
           # subscribers is the name of the extract
           # cache=True enables LRU query caching
-          return lore.io.main.dataframe('subscribers', limit=100, cache=True)
+          return lore.io.main.dataframe(filename='subscribers', limit=100, cache=True)
 
       def get_encoders(self):
           # An arbitrairily chosen set of encoders (w/ transformers)
